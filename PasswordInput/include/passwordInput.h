@@ -7,8 +7,16 @@
 
 #include <iostream>
 
+#include "options.h"
 
-std::string inputPassword();
+Options defaultOptions = {
+    "Input password: ",
+    true,
+    nullptr
+};
+
+
+std::string inputPassword(const Options &options = defaultOptions);
 
 
 #endif //PASSWORD_INPUT_PASSWORDINPUT_H

@@ -63,6 +63,13 @@ build CMakeFiles/passwordInput.dir/PasswordInput/example/main.cpp.obj: CXX_COMPI
   OBJECT_DIR = CMakeFiles\passwordInput.dir
   OBJECT_FILE_DIR = CMakeFiles\passwordInput.dir\PasswordInput\example
 
+build CMakeFiles/passwordInput.dir/PasswordInput/src/options.cpp.obj: CXX_COMPILER__passwordInput_unscanned_Debug C$:/Users/VOOleksandrov22/CLionProjects/password_input/PasswordInput/src/options.cpp || cmake_object_order_depends_target_passwordInput
+  DEP_FILE = CMakeFiles\passwordInput.dir\PasswordInput\src\options.cpp.obj.d
+  FLAGS = -g -std=gnu++14 -fdiagnostics-color=always
+  INCLUDES = -IC:/Users/VOOleksandrov22/CLionProjects/password_input/PasswordInput/include
+  OBJECT_DIR = CMakeFiles\passwordInput.dir
+  OBJECT_FILE_DIR = CMakeFiles\passwordInput.dir\PasswordInput\src
+
 
 # =============================================================================
 # Link build statements for EXECUTABLE target passwordInput
@@ -71,7 +78,7 @@ build CMakeFiles/passwordInput.dir/PasswordInput/example/main.cpp.obj: CXX_COMPI
 #############################################
 # Link the executable passwordInput.exe
 
-build passwordInput.exe: CXX_EXECUTABLE_LINKER__passwordInput_Debug CMakeFiles/passwordInput.dir/PasswordInput/src/passwordInput.cpp.obj CMakeFiles/passwordInput.dir/PasswordInput/example/main.cpp.obj
+build passwordInput.exe: CXX_EXECUTABLE_LINKER__passwordInput_Debug CMakeFiles/passwordInput.dir/PasswordInput/src/passwordInput.cpp.obj CMakeFiles/passwordInput.dir/PasswordInput/example/main.cpp.obj CMakeFiles/passwordInput.dir/PasswordInput/src/options.cpp.obj
   FLAGS = -g
   LINK_LIBRARIES = -lkernel32 -luser32 -lgdi32 -lwinspool -lshell32 -lole32 -loleaut32 -luuid -lcomdlg32 -ladvapi32
   OBJECT_DIR = CMakeFiles\passwordInput.dir

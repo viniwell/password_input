@@ -4,25 +4,29 @@
 
 #include <iostream>
 #include <conio.h>
+
 #include "passwordInput.h"
+#include "options.h"
 
 
 
-std::string inputPassword(){
-    std::string result;
+std::string inputPassword(const Options &options){
+    std::string password;
     char inputtedChar;
+
+    std::cout << options.message;
     inputtedChar = (char)getch();
 
 
     while (int(inputtedChar) != 13){
         if (inputtedChar == 127 || inputtedChar == 8){
-            if (result.size() > 0){
-                result.erase(result.size()-1);
+            if (password.size() > 0){
+                password.erase(password.size() - 1);
                 std::cout << "\b \b";
             }
 
         } else{
-            result += inputtedChar;
+            password += inputtedChar;
 
             std::cout << "*";
         }
@@ -31,6 +35,24 @@ std::string inputPassword(){
     }
     std::cout << "\n";
 
-    return result;
+
+    if (options.doubleCheck){
+        Options optionsForDoubleCheck = {
+            "Reenter the password : ",
+            false,
+            nullptr
+        };
+
+        std::string reenteredPassword = inputPassword(optionsForDoubleCheck);
+        if (password != reenteredPassword){
+            throw std::runtime_error("Passwords didn't match!");
+        }
+    }
+
+    if (!(options.validationCallback == nullptr || options.validationCallback(password))){
+        throw std::runtime_error("Validation failed!");
+    }
+
+    return password;
 
 }
