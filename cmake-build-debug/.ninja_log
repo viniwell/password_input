@@ -1,6 +1,19 @@
 # ninja log v6
-13	832	7592311051057742	CMakeFiles/password_input.dir/PasswordInput/src/passwordInput.cpp.obj	d68ae474a3e01a70
-40	534	7592359612107857	build.ninja	a38b38ffc40211af
-51	888	7592356754055050	CMakeFiles/passwordInput.dir/PasswordInput/src/passwordInput.cpp.obj	8509722e4f7d7e4c
-36	827	7592346532070529	CMakeFiles/passwordInput.dir/PasswordInput/example/main.cpp.obj	9c651c06ea18ddc9
-889	1043	7592356762442830	passwordInput.exe	20968c1a5a24d39
+55	1249	7593475652279108	CMakeFiles/password_input.dir/PasswordInput/src/options.cpp.obj	609b6714252cacb5
+40	534	7593493690213259	build.ninja	a38b38ffc40211af
+51	2737	7593482822730983	CMakeFiles/password_input.dir/PasswordInput/src/passwordInput.cpp.obj	4447cea1027c3503
+1866	2210	7593486957829591	password_input.exe	8efa5fb299ccf148
+42	1865	7593486939580601	CMakeFiles/password_input.dir/PasswordInput/example/main.cpp.obj	cc98a1e5a5e4b2d9
+12	1022	7593493690213259	build.ninja	2d4248c89e555af0
+33	164	7593493692848270	CMakeFiles/password_input.dir/PasswordInput/src/options.cpp.obj.ddi	ff2db2a64dee160b
+41	374	7593493692923601	CMakeFiles/password_input.dir/PasswordInput/src/passwordInput.cpp.obj.ddi	f82b5e4166a74fdf
+25	377	7593493692765854	CMakeFiles/password_input.dir/PasswordInput/example/main.cpp.obj.ddi	c6b41605ef0795ff
+377	445	7593493696900208	CMakeFiles/password_input.dir/CXX.dd	cc08c17071c1fac9
+377	445	7593493696900208	D:/IT/projects/password_input/cmake-build-debug/CMakeFiles/password_input.dir/CXXModules.json	cc08c17071c1fac9
+377	445	7593493696900208	CMakeFiles/password_input.dir/PasswordInput/example/main.cpp.obj.modmap	cc08c17071c1fac9
+377	445	7593493696900208	CMakeFiles/password_input.dir/PasswordInput/src/options.cpp.obj.modmap	cc08c17071c1fac9
+377	445	7593493696900208	CMakeFiles/password_input.dir/PasswordInput/src/passwordInput.cpp.obj.modmap	cc08c17071c1fac9
+465	614	7593493697162851	CMakeFiles/password_input.dir/PasswordInput/src/options.cpp.obj	e0f14feefef89b84
+459	2346	7593493697103932	CMakeFiles/password_input.dir/PasswordInput/example/main.cpp.obj	d4a9fd555dbc0e6a
+471	2348	7593493697220245	CMakeFiles/password_input.dir/PasswordInput/src/passwordInput.cpp.obj	d9d2c859cb7ef7e8
+2348	2889	7593493715996365	password_input.exe	8efa5fb299ccf148
