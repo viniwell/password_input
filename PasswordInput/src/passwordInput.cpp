@@ -28,7 +28,7 @@ std::string inputPassword(const Options &options){
         } else{
             password += inputtedChar;
 
-            std::cout << "*";
+            std::cout << options.replaceSymbolsWith;
         }
 
         inputtedChar = (char)getch();
@@ -38,19 +38,19 @@ std::string inputPassword(const Options &options){
 
     if (options.doubleCheck){
         Options optionsForDoubleCheck = {
-            "Reenter the password : ",
-            false,
-            nullptr
+            .message = options.doubleCheckMessage,
+            .doubleCheck = false,
+            .validationCallback = nullptr
         };
 
         std::string reenteredPassword = inputPassword(optionsForDoubleCheck);
         if (password != reenteredPassword){
-            throw std::runtime_error("Passwords didn't match!");
+            throw std::runtime_error("1");
         }
     }
 
     if (!(options.validationCallback == nullptr || options.validationCallback(password))){
-        throw std::runtime_error("Validation failed!");
+        throw std::runtime_error("2");
     }
 
     return password;

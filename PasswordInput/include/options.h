@@ -16,7 +16,9 @@
 struct Options{
     std::string message = "Input password: ";
     bool doubleCheck = true;
+    std::string doubleCheckMessage = "Reenter the password: ";
     bool (*validationCallback)(const std::string&) = nullptr;
+    char replaceSymbolsWith = '*';
 };
 
 
