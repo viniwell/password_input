@@ -9,5 +9,4 @@ add_executable(password_input
     PasswordInput/example/main.cpp
     PasswordInput/include/options.h
     PasswordInput/include/passwordInput.h
-    PasswordInput/src/options.cpp
     PasswordInput/src/passwordInput.cpp)

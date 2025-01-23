@@ -40,7 +40,8 @@ std::string inputPassword(const Options &options){
         Options optionsForDoubleCheck = {
             .message = options.doubleCheckMessage,
             .doubleCheck = false,
-            .validationCallback = nullptr
+            .validationCallback = nullptr,
+            .replaceSymbolsWith = options.replaceSymbolsWith
         };
 
         std::string reenteredPassword = inputPassword(optionsForDoubleCheck);
