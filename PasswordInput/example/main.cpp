@@ -8,7 +8,22 @@
 
 
 int main(){
-    std::string password = inputPassword();
+    Options options = {
+        "Test message: ",
+        false,
+        [](const std::string &password) -> bool {
+            return password.size() > 5;
+        }
+    };
+
+    std::string password;
+    try {
+        password = inputPassword(options);
+    } catch(std::runtime_error &e) {
+        std::cout << e.what() << "\n";
+        return 1;
+    }
+
 
     std::cout << "Your password is " << password << "\n";
     std::cout << "Press any to exit: "; getch();

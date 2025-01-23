@@ -9,14 +9,10 @@
 
 #include "options.h"
 
-Options defaultOptions = {
-    "Input password: ",
-    true,
-    nullptr
-};
 
 
-std::string inputPassword(const Options &options = defaultOptions);
+
+std::string inputPassword(const Options &options = Options{});
 
 
 #endif //PASSWORD_INPUT_PASSWORDINPUT_H
