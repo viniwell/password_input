@@ -1,3 +1,0 @@
-D:/IT/projects/password_input/cmake-build-debug/CMakeFiles/password_input.dir
-D:/IT/projects/password_input/cmake-build-debug/CMakeFiles/edit_cache.dir
-D:/IT/projects/password_input/cmake-build-debug/CMakeFiles/rebuild_cache.dir
